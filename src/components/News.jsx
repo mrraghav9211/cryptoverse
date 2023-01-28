@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import { Select, Typography, Row, Col, Avatar, Card } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { addCategory } from '../app/searchSlice'
@@ -20,7 +20,7 @@ const News = () => {
       setNewsDetails(newsData[0].value)
       setCoins(data[0].data.coins)  
     },500)
-    // console.log(newsDetails)
+
 
   return (
     <>
